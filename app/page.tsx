@@ -678,51 +678,137 @@ export default function Home() {
         </div>
       </section>
 
-      {/* =====================================================
+  {/* =====================================================
           FOOTER
           ===================================================== */}
-      <footer className="border-t border-white/10 bg-black">
-        <div
-          className="
-            mx-auto
-            flex
-            w-[94%]
-            max-w-7xl
-            flex-col
-            items-center
-            justify-between
-            gap-5
-            py-10
-            sm:flex-row
-          "
-        >
-          <div className="flex items-center gap-3">
-            <img
-              src="/logo.png"
-              alt="KrishAIWorks"
-              className="
-                h-12
-                w-12
-                rounded-full
-                border border-amber-400/20
-                object-cover
-              "
-            />
+      <footer className="relative z-10 border-t border-white/10 bg-black px-4 py-12">
+        <div className="mx-auto w-[94%] max-w-7xl">
 
-            <div>
-              <p className="font-bold">
-                KrishAIWorks
+          {/* Related Tools */}
+          <div className="mb-10">
+            <div className="mb-6 text-center">
+              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-amber-400/70">
+                Explore More
               </p>
 
-              <p className="text-xs text-white/35">
-                AI Solutions That Work
+              <h3 className="mt-2 text-2xl font-bold text-white">
+                More Useful Tools
+              </h3>
+
+              <p className="mx-auto mt-2 max-w-xl text-sm text-white/40">
+                Explore more free tools from KrishAIWorks to simplify your
+                everyday digital tasks.
               </p>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+              {/* QR Code Generator */}
+              <a
+                href="https://qrcodegeneratorscanner.krishaiworks.com/"
+                className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-amber-400/30 hover:bg-amber-400/[0.05]"
+              >
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-amber-400/20 bg-amber-400/10 text-xl">
+                  ▦
+                </div>
+
+                <h4 className="font-semibold text-white transition-colors group-hover:text-amber-300">
+                  QR Code Generator
+                </h4>
+
+                <p className="mt-2 text-xs leading-5 text-white/40">
+                  Create and scan QR codes quickly and easily.
+                </p>
+              </a>
+
+              {/* ZIP File Creator */}
+              <a
+                href="https://zipfilecreator.krishaiworks.com/"
+                className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-amber-400/30 hover:bg-amber-400/[0.05]"
+              >
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-amber-400/20 bg-amber-400/10 text-xl">
+                  🗜️
+                </div>
+
+                <h4 className="font-semibold text-white transition-colors group-hover:text-amber-300">
+                  ZIP File Creator
+                </h4>
+
+                <p className="mt-2 text-xs leading-5 text-white/40">
+                  Create ZIP archives from your files in seconds.
+                </p>
+              </a>
+
+              {/* Base64 Encoder & Decoder */}
+              <a
+                href="https://base64encoderdecoder.krishaiworks.com/"
+                className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-amber-400/30 hover:bg-amber-400/[0.05]"
+              >
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-amber-400/20 bg-amber-400/10 text-xl">
+                  &lt;/&gt;
+                </div>
+
+                <h4 className="font-semibold text-white transition-colors group-hover:text-amber-300">
+                  Base64 Encoder &amp; Decoder
+                </h4>
+
+                <p className="mt-2 text-xs leading-5 text-white/40">
+                  Encode and decode Base64 text instantly.
+                </p>
+              </a>
+
+              {/* JSON Formatter */}
+              <a
+                href="https://jsonformattervalidator.krishaiworks.com/"
+                className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-amber-400/30 hover:bg-amber-400/[0.05]"
+              >
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-amber-400/20 bg-amber-400/10 text-xl">
+                  {"{}"}
+                </div>
+
+                <h4 className="font-semibold text-white transition-colors group-hover:text-amber-300">
+                  JSON Formatter &amp; Validator
+                </h4>
+
+                <p className="mt-2 text-xs leading-5 text-white/40">
+                  Format, validate, and clean JSON data effortlessly.
+                </p>
+              </a>
+
             </div>
           </div>
 
-          <p className="text-xs text-white/30">
-            © 2026 KrishAIWorks. All rights reserved.
-          </p>
+          {/* Footer Bottom */}
+          <div className="flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-8 sm:flex-row">
+            <div className="flex items-center gap-3">
+              <img
+                src="/logo.png"
+                alt="KrishAIWorks"
+                className="
+                  h-12
+                  w-12
+                  rounded-full
+                  border border-amber-400/20
+                  object-cover
+                "
+              />
+
+              <div>
+                <p className="font-bold text-white">
+                  KrishAIWorks
+                </p>
+
+                <p className="text-xs text-white/35">
+                  AI Solutions That Work
+                </p>
+              </div>
+            </div>
+
+            <p className="text-xs text-white/30">
+              © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+            </p>
+          </div>
+
         </div>
       </footer>
 
