@@ -778,39 +778,65 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Footer Bottom */}
-          <div className="flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-8 sm:flex-row">
-            <div className="flex items-center gap-3">
-              <img
-                src="/logo.png"
-                alt="KrishAIWorks"
-                className="
-                  h-12
-                  w-12
-                  rounded-full
-                  border border-amber-400/20
-                  object-cover
-                "
-              />
+         {/* Footer Bottom */}
+<div className="flex flex-col items-center justify-between gap-5 border-t border-white/10 pt-8 sm:flex-row">
 
-              <div>
-                <p className="font-bold text-white">
-                  KrishAIWorks
-                </p>
+  <div className="flex items-center gap-3">
 
-                <p className="text-xs text-white/35">
-                  AI Solutions That Work
-                </p>
-              </div>
-            </div>
+    <img
+      src="/logo.png"
+      alt="KrishAIWorks"
+      className="
+        h-12
+        w-12
+        rounded-full
+        border border-amber-400/20
+        object-cover
+      "
+    />
 
-            <p className="text-xs text-white/30">
-              © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
-            </p>
-          </div>
+    <div>
+      <p className="font-bold text-white">
+        KrishAIWorks
+      </p>
 
-        </div>
-      </footer>
+      <p className="text-xs text-white/35">
+        AI Solutions That Work
+      </p>
+    </div>
+
+  </div>
+
+  <div className="flex flex-col items-center gap-2 sm:items-end">
+
+    <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-white/30">
+
+      <a
+        href="https://krishaiworks.com/privacy-policy"
+        className="whitespace-nowrap transition hover:text-amber-300"
+      >
+        Privacy Policy
+      </a>
+
+      <a
+        href="https://krishaiworks.com/terms-and-conditions"
+        className="whitespace-nowrap transition hover:text-amber-300"
+      >
+        Terms & Conditions
+      </a>
+
+    </div>
+
+    <p className="text-xs text-white/30">
+      © {new Date().getFullYear()} KrishAIWorks. All rights reserved.
+    </p>
+
+  </div>
+
+</div>
+
+</div>
+</footer>
 
     </main>
   );
